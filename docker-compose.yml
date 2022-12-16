@@ -3,6 +3,6 @@ services:
   app:
     build: .
     environment:
-    - URL=https://test.com
-    - API=abc123
-    - DEBUG=n
+    - URL=$URL
+    - API=$API
+    - DEBUG=$DEBUG
