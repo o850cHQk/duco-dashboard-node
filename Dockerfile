@@ -10,4 +10,4 @@ RUN pip3 install -r requirements.txt
 COPY Duco-Dash-Worker.py
 COPY start.sh
 
-CMD [ "./start.sh" ]
+CMD ["/bin/bash", "-c", "./start.sh" ]
