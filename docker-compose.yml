@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build: .
-  environment:
-  - URL=https://test.com
-  - API=abc123
-  - DEBUG=n
+    environment:
+    - URL=https://test.com
+    - API=abc123
+    - DEBUG=n
