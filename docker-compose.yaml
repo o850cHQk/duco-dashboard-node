@@ -1,0 +1,11 @@
+version: '3.7'
+services:   
+  duco-dash-node:
+    container_name: duco-dashboard-node
+    image: python:3.8-slim-buster
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+         - URL=${YOUR_VAR}
+         - API=${YOUR_VAR}
