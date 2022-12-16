@@ -17,4 +17,4 @@ RUN echo 'api = $API' >> Settings.cfg
 RUN echo 'url = $URL' >> Settings.cfg
 RUN echo 'debug = n' >> Settings.cfg
 
-CMD [ "cat", "Settings.cfg" ]
+CMD [ "python3", "Duco-Dash-Worker.py" ]
