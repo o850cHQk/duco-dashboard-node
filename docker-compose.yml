@@ -6,6 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      args:
-         - URL=${YOUR_VAR}
-         - API=${YOUR_VAR}
+      environment:
+      - URL=abc123
+      - API=https://test.com
+      - DEBUG=n
