@@ -9,7 +9,8 @@ RUN pip3 install -r requirements.txt
 
 COPY Duco-Dash-Worker.py
 
-
+ARG API
+ARG URL
 
 RUN echo '[Duco-Dash]' > Settings.cfg
 RUN echo 'api = $API' >> Settings.cfg
