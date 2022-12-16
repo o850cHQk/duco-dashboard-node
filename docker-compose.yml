@@ -6,5 +6,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      env_file:
-      - .env
+      args:
+         - URL=${YOUR_VAR}
+         - API=${YOUR_VAR}
