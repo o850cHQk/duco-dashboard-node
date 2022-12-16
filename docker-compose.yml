@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-      environment:
-      - URL=abc123
-      - API=https://test.com
-      - DEBUG=n
+    environment:
+    - URL=abc123
+    - API=https://test.com
+    - DEBUG=n
